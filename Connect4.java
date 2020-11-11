@@ -4,7 +4,9 @@ public class Connect4 {
     public static int playerOneChoice;
     public static int columnsLen = 7;
     public static int rowsLen = 6;
-    public static char[][] board = new char[rowsLen][columnsLen];
+    public static char[][] board = { {' ', ' ', ' ', ' ', ' ', ' ', ' '},{' ', ' ', ' ', ' ', ' ', ' ', ' '},{' ', ' ', ' ', ' ', ' ', ' ', ' '},{' ', ' ', ' ', ' ', ' ', ' ', ' '},{' ', ' ', ' ', ' ', ' ', ' ', ' '},{' ', ' ', ' ', ' ', ' ', ' ', ' '}};
+
+
     public static void main(String[] args) {
 
         // prints board
@@ -18,11 +20,11 @@ public class Connect4 {
     }
 
     public static void printBoard() {
-        System.out.println("     A   B   C   D   E   F   G   ");
+        System.out.println("     A   B   C   D   E   F   G");
         for (int i = 0; i < rowsLen; i++) {
             System.out.print(i + 1);
             for (int j = 0; j < columnsLen; j++) {
-                System.out.print("  | " + board[i][j]);
+                System.out.print("  |" + board[i][j]);
 
             }
             System.out.print("  |\n");
