@@ -1,15 +1,17 @@
 import java.util.Scanner;
-public class PlayerOne {
+
+public class PlayerTwo {
+
 
     public static int gamePlay() {
         // method to retrieve playerTwo input
         Scanner scan = new Scanner(System.in);
         String letter;
         int choice;
-        System.out.println("Enter column letter PlayerOne: ");
+        System.out.println("Enter column letter PlayerTwo: ");
         letter = scan.nextLine();
         letter = letter.toUpperCase();
-        // changes letter to a number
+        // changes letter choice to a number
         if (letter.equals("A")) {
             choice = 1;
         } else if (letter.equals("B")) {
@@ -28,4 +30,7 @@ public class PlayerOne {
         return choice;
 
     } // end of gamePlay method
+
+
+
 }
